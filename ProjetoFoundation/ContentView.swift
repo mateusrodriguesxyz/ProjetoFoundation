@@ -9,14 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            Image(systemName: "globe")
+        VStack {
+            HStack {
+                Image(systemName: "globe")
+                    .font(.largeTitle)
+                    .padding(5)
+                Text("Olá Mundo!")
+                    .font(.largeTitle)
+            }
+            .padding()
+
+            Image(systemName: "heart.fill")
                 .font(.largeTitle)
-                .padding(5)
-            Text("Olá Mundo!")
-                .font(.largeTitle)
+                .foregroundColor(Color.red)
+
+            Spacer()
         }
-        .padding()
     }
 }
 
